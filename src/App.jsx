@@ -6,13 +6,24 @@ import './App.css'
 function App() {
   return (
     <div className="homepage">
-      <header className="hero-area">
-        <h1>🚀 StudyPal</h1>
-        <p>
+      <header className="nav-bar">
+        <h1 className="logo">🚀 StudyPal</h1>
+
+        <nav className="nav-menu">
+          <a href="#">Home</a>
+          <a href="#">Features</a>
+          <a href="#">About</a>
+          <a href="#">Contact</a>
+        </nav>
+
+        <button className="signup-btn">Sign Up</button>
+      </header>
+        
+        <p className='tagline'>
           Personalized learning paths for fast, slow and dyslexic learners.
         </p>
         <button className='get-started-btn'>Get started!</button>
-      </header>
+
       <section className="features">
         <div className='feature'>
           <h3>📊 Initial Assessment </h3>
@@ -34,7 +45,7 @@ function App() {
         </div>                
       </section>
       <footer className='footer'>
-        <p>©Made w ❤️ by Sukhdev Thukral, 2025 </p>
+        <p>©Made with ❤️ by Sukhdev Thukral, 2025 </p>
       </footer>
     </div>
   );
